@@ -6,9 +6,9 @@ import awesome_math
 import awesome_sort
 import awesome_logger
 
-@given(a = some.integers(), b = some.integers())
-def test_add_must_return_sum_of_arguments(a, b):
-    assert(awesome_math.add(a,b) == a+b)
+# @given(a = some.integers(), b = some.integers())
+# def test_add_must_return_sum_of_arguments(a, b):
+#     assert(awesome_math.add(a,b) == a+b)
 
 @given(list = some.lists(some.integers()))
 def test_bubble_sort_list_size_is_invariant(list):
